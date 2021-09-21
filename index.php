@@ -9,7 +9,10 @@
 <body>
     <?php 
         $paraghrap = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quae aspernatur suscipit voluptates sit.';
-        echo $paraghrap . '</br>' . strlen($paraghrap);
+        $censored_word = $_GET['badword'];
+        echo $paraghrap . '</br>' . strlen($paraghrap) . '</br>';
+        $censored_sentence = str_replace($censored_word, '***', $paraghrap);
+        echo $censored_sentence . '</br>' . strlen($censored_sentence);
     ?>
 </body>
 </html>
