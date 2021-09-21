@@ -9,7 +9,7 @@
 <body>
     <?php 
         $paraghrap = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quae aspernatur suscipit voluptates sit.';
-        echo $paraghrap;
+        echo $paraghrap . '</br>' . strlen($paraghrap);
     ?>
 </body>
 </html>
